@@ -1,64 +1,54 @@
-# 23122206 Muhammad Abdullah
+# 23122206 M.Abdullah
+# Intelligent Agents Assignment
 
+## AI Study Preparation & Paper Prediction Agent
 
-Intelligent Agents Assignment
+**Student Name:** Muhammad Abdullah  
+**Roll Number:** 23122206 
+**Section:** A
+**Semester:** 6
 
-AI Study Preparation & Paper Prediction Agent
+---
 
-This repository contains my Intelligent Agents assignment and a small Python demonstration of a basic decision-making travel agent.
+## Project Overview
 
-The main assignment presents an AI Study Preparation & Paper Prediction Agent. The proposed agent analyzes study material, lecture notes, course guides, and past papers to identify recurring topics and help students create a prioritized study plan. The prediction is treated as an evidence-based estimate rather than a guarantee of the exact examination paper.
+This repository contains my **Intelligent Agents assignment** along with a small Python-based example of TRAVELAGENT that demonstrates a simple decision-making.
 
-Repository Contents
+The main project focuses on an **AI Study Preparation & Paper Prediction Agent**. The purpose of this agent is to analyze study material, lecture notes, course guides, and previous examination papers to identify recurring topics and question patterns AND CAN PREDICT LIKELY GUESS PAPER.
 
-AI_Study_Preparation_Agent_Professional.pdf — Complete assignment report.
+Based on this information, the agent can help students prioritize important topics and prepare a more focused study plan.
 
-travel_agent_ai.ipynb — Google Colab notebook containing the basic Python agent.
+The predicted topics are treated as **evidence-based recommendations**, not as a guarantee of the exact examination paper.
 
-travel_agent_ai.py — Standalone Python version of the same example.
+---
 
-README.md — Project overview and instructions.
+## Repository Contents
 
-Basic Travel Agent Example
+| File | Description |
+|---|---|
+| `AI_Study_Preparation_Agent.pdf` | Complete Intelligent Agents assignment report |
+| `M_Abdullah_Lab1.ipynb` | Google Colab notebook containing the Travel Agent example |
+| `README.md` | Project documentation and instructions |
 
-The Python example demonstrates a simple decision rule:
+---
 
-If payment is completed, the system generates a receipt.
+## Basic Travel Agent Example
 
-If payment is not completed, the system displays a payment-pending message.
+As a small practical example, I created a simple rule-based Travel Agent.
 
-payment_done = True
+The agent checks whether a customer's payment has been completed.
+
+- If the payment is complete, the system generates a receipt.
+- If the payment is incomplete, the system asks the customer to complete the payment first.
+
+### Python Code
+
+```python
+payment_done = True      
 customer = "Ali"
 amount = 25000
+
 if payment_done:
     print(f"Receipt generated for {customer}: PKR {amount}")
 else:
-    print("Payment not done. Please complete payment first.")
-
-This is intentionally a very small rule-based example. In intelligent-agent terms, the payment status is the percept/input, the if/else statement performs the decision, and the printed result is the action/output.
-
-Run in Google Colab
-
-After uploading this repository to GitHub, replace YOUR_USERNAME below with your GitHub username:
-
-https://colab.research.google.com/github/YOUR_USERNAME/intelligent-agents-assignment/blob/main/travel_agent_ai.ipynb
-
-You can also open the .ipynb file on GitHub and choose Open in Colab if that option is available.
-
-Run Locally
-
-Make sure Python 3 is installed, then run:
-
-python travel_agent_ai.py
-
-No external Python packages are required.
-
-Suggested Repository Link
-
-After creating the GitHub repository, your link should look like:
-
-https://github.com/YOUR_USERNAME/intelligent-agents-assignment
-
-Submission
-
-For the Google Docs submission list, paste the public GitHub repository link. If your instructor also requests the Colab notebook link, include the Colab URL shown above after replacing YOUR_USERNAME.
+    print("Payment not done. Please complete payment first.")        
